@@ -1,193 +1,895 @@
-<!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-BCFLJ6FRBX"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-		
-		  gtag('config', 'G-BCFLJ6FRBX');
-		</script>	 
-		<title>Divyang's Website</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="landing is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyang Kuntar — Developer</title>
+    <meta name="description" content="Debugging life's mysteries with a touch of code and a lot of curiosity.">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BCFLJ6FRBX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-BCFLJ6FRBX');
+    </script>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Divyang Kuntar</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="#one">About Me</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
+    <!-- Fonts: Syne (bold display) + Inter (clean body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2>Divyang Kuntar</h2>
-							<p>Debugging life's mysteries with a touch of code and a lot of curiosity</p>
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
-					</section>
- 
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<h2>Hi! Welcome to my portfolio</h2>
-							<p>
-								This website shows who I am in front of and beyond the screen!<br>
-								Feel free to explore and reach out to me, I am always looking to make new friends!
-							</p>
-							<a href="#footer" class="more scrolly">Contact Me</a>
-						</div>
-					</section>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#0c0c0c',
+                        surface: '#111111',
+                        elevated: '#181818',
+                        border: '#222222',
+                        primary: '#ffffff',
+                        secondary: '#737373',
+                        tertiary: '#525252',
+                    },
+                    fontFamily: {
+                        display: ['Syne', 'system-ui', 'sans-serif'],
+                        body: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 
-				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="./assets/css/images/ProfilePicture.jpg" alt="Divyang Kuntar"/></div><div class="content">
-								<h2><br />
-								The Technical Side</h2>
-                                <p>I am a rising CS major at the LJ University. I am passionate about full-stack development, quantum computing, and technology in general. My primary technical skills include Java, Python, MERN, and SQL, making me adept and interested in full-stack development. This software expertise is complemented by my hands-on experience with computer hardware and IoT. As a hobby, I love working with electronics and building new things from salvaged components, such as making custom drones from scrap parts.</p>
-								<a href="#" class="button" target="_blank">Check out my Resume!</a>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="./assets/css/images/EatingCookie.jpg" alt="Divyang Kuntar" /></div><div class="content">
-								<h2>The "Fun" Side<br />
-								</h2>
-								<p>Away from the coding lifestyle, I enjoy playing and watching sports, particularly cricket. I also an avid reader, currently interested in more physics and computer scienc-ey texts, however, <i>Harry Potter</i> and <i>Narnia</i> are childhood favorites. I enjoy late-night movie marathons and binging TV-shows, with The Big Bang Theory my all-time favorite.
-								<br>
-								<br>
-								I am also a HUGE cookie enthusiast as seen by the photo!</p>
-							</div>
-						</section>
-					</section>
+    <style>
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
 
-				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>My Skills & Interests</h2> <h4>(+ project highlights!!)</h4>
-								<p>These are just my highlighted skills and interests. Have thoughts and wanna share? Reach out whenever!</p>
-							</header>
-							<ul class="features">
-								<li>
-									<div style="display: flex; gap: 25px; text-align: center;">
-										<i class="fa-solid fa-code"></i>
-										<h3>Technical Toolset</h3>
-									</div>
-									<p>Proficient in Java, Python, JavaScript/TypeScript, C, SQL. Currently learning OCaml and Rust. Experience with MERN & MEAN stacks through personal projects (can be found on GitHub!). Always looking to learn more!</p>
-								</li>
-								<li>
-									<div style="display: flex; gap: 25px; font-size: 0.9em;">
-										<i class="fa-solid fa-atom"></i>
-										<h3>Quantum Curiosities</h3>
-									</div>
-									<p>Since my sophomore year of high school, I have become fascinated with the world of quantum mechanics. And pairing it with my CS passion, I am intrigued by quantum information and aim to be part of the quantum workforce in the near future.</p>
-								</li>
-								<li>
-									<div style="display: flex; gap: 25px; font-size: 0.9em; text-align: center;">
-										<i class="fa-solid fa-dumbbell"></i>
-										<h3>Gym Enthusiast & Workout Creator</h3>
-									</div>
-									<p>Over the past year I have started to hit the gym on a frequent basis, so much so, that I created a React-based website to aid me in creating ideal workouts. Based on your choices, the algorithm will spurn out a customized workout routine just for you!</p>
-									<br>
-									<a href="Divyang Kuntarworkout-creator.netlify.app/" class="button" target="_blank">Check it out!</a>
-									<br>
-									<a href="Divyang Kuntargithub.com//React.js-Gym-App" class="button" target="_blank">View the Code!</a>
-								</li>
-								<li>
-									<div style="display: flex; gap: 25px; font-size: 0.9em; text-align: center;">
-										<i class="fa-solid fa-camera"></i>
-										<h3>Picturesque Views & Daily Image Viewer</h3>
-									</div>
-									<p>I am an absolute sucker for stunning views and scenic photos, particularly cityscapes and space shots. Although I am not the best photo-taker, I did create a website which displays NASA's astronomical picture of the day so enjoy the view–and learn about it too!.</p>
-									<br>
-									<a href="Divyang Kuntarapod-nasa-web-app.netlify.app/" class="button" target="_blank">Check it out!</a>
-									<br>
-									<a href="Divyang Kuntargithub.com//React.js-Nasa-App" class="button" target="_blank">View the Code!</a>
-								</li>
-								<li>
-									<div style="display: flex; gap: 25px; font-size: 0.9em; text-align: center;">
-										<i class="fa-solid fa-clipboard-list"></i>
-										<h3>Staying on Top of Things + To-Do List</h3>
-									</div>
-									<p>If you are anything like me, you like to stay organized and keep track of all the things you have to do. I am very much a plan-ahead and planned-my-day-out-two-nights-ago (not to say I can't be spontaneous!). So it is only reasonable I make a CRUD-styled todo list web-app. Use it for your own good!</p>
-									<br>
-									<a href="Divyang Kuntarsams-list.netlify.app/" class="button" target="_blank">Check it out!</a>
-									<br>
-									<a href="Divyang Kuntargithub.com//React.js-Todo-App" class="button" target="_blank">View the Code!</a>
-								</li>
-								<li>
-									<div style="display: flex; gap: 25px; text-align: center;">
-										<i class="fa-regular fa-face-smile"></i>
-										<h3>Enjoyment Always!</h3>
-									</div>
-									<p>Although I am not old enough to gamble, I do still have fun. Playing games with my friends, riding my bike, watching movies (a lot!!), and eating cookies are just a couple of the things I enjoy doing. Outside of debugging and writing lines of code, I look to enjoy my time whenever I can, thanfully taking me away from the horrid monstrosities that await me at my next coding challenge!</p>
-								</li>
-							</ul>
-						</div>
-					</section>
+        html {
+            scroll-behavior: smooth;
+        }
 
-				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>Wanna learn more?</h2>
-								<p>This website is truly only a snapshot of who I am. If you would like to learn more and learn more about me, feel free to use any of the social media links below to get in touch (hopefully for an internship). Till then, hasta la vista!</p>
-							</header>
-						</div>
-					</section>
+        body {
+            background: #0c0c0c;
+        }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="mailto:divyangkuntar@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
-							<li><a href="https://github.com/kuntardivyang"><i class="fa-brands fa-github"></i></a></li>
-							<li><a href="https://linkedin.com/in/kuntardivyang"><i class="fa-brands fa-linkedin-in"></i></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy;DIVYANGKUNTAR</li>
-						</ul>
-					</footer>
+        ::selection {
+            background: #ffffff;
+            color: #0c0c0c;
+        }
 
-			</div>
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0c0c0c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #222222;
+            border-radius: 2px;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        /* Custom cursor */
+        .cursor-dot {
+            width: 8px;
+            height: 8px;
+            background: #ffffff;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transition: transform 0.1s ease;
+            transform: translate(-50%, -50%);
+        }
 
-	</body>
+        .cursor-outline {
+            width: 36px;
+            height: 36px;
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9998;
+            transition: transform 0.12s ease, width 0.2s ease, height 0.2s ease, border-color 0.2s ease;
+            transform: translate(-50%, -50%);
+        }
 
+        .cursor-outline.hover {
+            width: 56px;
+            height: 56px;
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        /* Reveal animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; }
+        .delay-5 { transition-delay: 0.5s; }
+
+        /* Text reveal line by line */
+        .line-reveal {
+            overflow: visible;
+        }
+
+        .line-reveal span {
+            display: block;
+            transform: translateY(100%);
+            transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .line-reveal.active span {
+            transform: translateY(0);
+        }
+
+        /* Magnetic hover effect */
+        .magnetic {
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Project card */
+        .project-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 40%, rgba(12,12,12,0.95) 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 1;
+        }
+
+        .project-card:hover::before {
+            opacity: 1;
+        }
+
+        .project-card .project-info {
+            transform: translateY(20px);
+            opacity: 0;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+        }
+
+        .project-card:hover .project-info {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .project-card .project-image {
+            transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .project-card:hover .project-image {
+            transform: scale(1.05);
+        }
+
+        .project-card .project-number {
+            transition: opacity 0.3s ease;
+        }
+
+        .project-card:hover .project-number {
+            opacity: 0;
+        }
+
+        /* Link hover */
+        .link-hover {
+            position: relative;
+        }
+
+        .link-hover::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #ffffff;
+            transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .link-hover:hover::after {
+            width: 100%;
+        }
+
+        /* Tag */
+        .tag {
+            font-size: 0.65rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #737373;
+            padding: 0.375rem 0.875rem;
+            border: 1px solid #222222;
+            border-radius: 100px;
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+
+        .tag:hover {
+            border-color: #525252;
+            color: #ffffff;
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+
+        /* Horizontal line animation */
+        .line-expand {
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .line-expand.active {
+            transform: scaleX(1);
+        }
+
+        /* Marquee */
+        @keyframes marquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        .marquee-track {
+            animation: marquee 25s linear infinite;
+        }
+
+        .marquee-track:hover {
+            animation-play-state: paused;
+        }
+
+        /* Footer link */
+        .footer-link {
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #222222;
+        }
+
+        .footer-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #ffffff;
+            transition: width 0.3s ease;
+        }
+
+        .footer-link:hover::after {
+            width: 100%;
+        }
+
+        /* Spotlight card */
+        .spotlight-card {
+            position: relative;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .spotlight-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .spotlight-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 12px;
+            padding: 1px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .spotlight-card:hover::before {
+            opacity: 1;
+        }
+
+        /* Interest item */
+        .interest-item {
+            transition: color 0.2s ease;
+        }
+
+        .interest-item:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="bg-bg text-primary font-body antialiased">
+
+    <!-- Custom Cursor (desktop only) -->
+    <div class="cursor-dot hidden md:block" id="cursorDot"></div>
+    <div class="cursor-outline hidden md:block" id="cursorOutline"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 mix-blend-difference">
+        <div class="max-w-[1800px] mx-auto px-6 md:px-12 lg:px-20">
+            <div class="flex items-center justify-between h-20 md:h-24">
+                <!-- Logo -->
+                <a href="#" class="font-display text-lg md:text-xl font-bold tracking-tight magnetic">
+                    Divyang K.
+                </a>
+
+                <!-- Nav Links -->
+                <div class="hidden md:flex items-center gap-12">
+                    <a href="#about" class="text-sm link-hover magnetic">About</a>
+                    <a href="#work" class="text-sm link-hover magnetic">Work</a>
+                    <a href="#skills" class="text-sm link-hover magnetic">Skills</a>
+                    <a href="#contact" class="text-sm link-hover magnetic">Contact</a>
+                </div>
+
+                <!-- Menu Button (Mobile) -->
+                <button id="menuBtn" class="md:hidden text-sm font-medium magnetic">
+                    Menu
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-bg z-40 flex flex-col items-center justify-center gap-8 opacity-0 pointer-events-none transition-opacity duration-300">
+        <button id="closeMenu" class="absolute top-8 right-6 text-sm">Close</button>
+        <a href="#about" class="mobile-link font-display text-4xl font-bold">About</a>
+        <a href="#work" class="mobile-link font-display text-4xl font-bold">Work</a>
+        <a href="#skills" class="mobile-link font-display text-4xl font-bold">Skills</a>
+        <a href="#contact" class="mobile-link font-display text-4xl font-bold">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-20 pt-24">
+        <div class="max-w-[1800px] mx-auto w-full">
+            <!-- Eyebrow -->
+            <div class="reveal mb-6">
+                <p class="text-secondary text-sm tracking-widest uppercase">
+                    Full-Stack Developer & Creator
+                </p>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="font-display text-[11vw] md:text-[9vw] lg:text-[7vw] font-bold leading-[0.95] tracking-tight mb-8">
+                <div class="line-reveal">
+                    <span>Debugging life's</span>
+                </div>
+                <div class="line-reveal delay-1">
+                    <span><em class="font-normal not-italic text-secondary">mysteries</em> with</span>
+                </div>
+                <div class="line-reveal delay-2">
+                    <span>code & <em class="font-normal not-italic text-secondary">curiosity</em></span>
+                </div>
+            </h1>
+
+            <!-- Subtext -->
+            <div class="reveal delay-3 max-w-lg">
+                <p class="text-secondary text-base md:text-lg leading-relaxed">
+                    Hi, I'm <span class="text-primary">Divyang Kuntar</span>. I build things that matter,
+                    from full-stack applications to custom drones from salvaged parts.
+                </p>
+            </div>
+
+            <!-- CTA -->
+            <div class="reveal delay-4 flex flex-wrap gap-4 mt-10">
+                <a href="#work" class="inline-flex items-center gap-3 px-6 py-3 border border-primary rounded-full hover:bg-primary hover:text-bg transition-colors magnetic">
+                    <span class="text-sm">View my work</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="inline-flex items-center gap-3 px-6 py-3 text-secondary hover:text-primary transition-colors magnetic">
+                    <span class="text-sm">Get in touch</span>
+                </a>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="reveal delay-5 absolute bottom-12 right-6 md:right-12 lg:right-20 hidden md:block">
+                <p class="scroll-indicator text-xs text-tertiary tracking-widest uppercase">
+                    Scroll
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <section class="py-6 border-y border-border overflow-hidden">
+        <div class="flex whitespace-nowrap">
+            <div class="marquee-track flex items-center gap-8 text-tertiary text-xs tracking-widest uppercase">
+                <span>Full-Stack Development</span>
+                <span class="text-secondary">✦</span>
+                <span>React & Node.js</span>
+                <span class="text-secondary">✦</span>
+                <span>Quantum Computing</span>
+                <span class="text-secondary">✦</span>
+                <span>IoT & Hardware</span>
+                <span class="text-secondary">✦</span>
+                <span>Java & Python</span>
+                <span class="text-secondary">✦</span>
+                <span>MERN Stack</span>
+                <span class="text-secondary">✦</span>
+                <span>Problem Solving</span>
+                <span class="text-secondary">✦</span>
+                <span>Full-Stack Development</span>
+                <span class="text-secondary">✦</span>
+                <span>React & Node.js</span>
+                <span class="text-secondary">✦</span>
+                <span>Quantum Computing</span>
+                <span class="text-secondary">✦</span>
+                <span>IoT & Hardware</span>
+                <span class="text-secondary">✦</span>
+                <span>Java & Python</span>
+                <span class="text-secondary">✦</span>
+                <span>MERN Stack</span>
+                <span class="text-secondary">✦</span>
+                <span>Problem Solving</span>
+                <span class="text-secondary">✦</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-28 md:py-40 px-6 md:px-12 lg:px-20">
+        <div class="max-w-[1800px] mx-auto">
+            <!-- Section Header -->
+            <div class="reveal mb-16 md:mb-24">
+                <p class="text-secondary text-sm tracking-widest uppercase mb-4">About Me</p>
+                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+                    The person behind<br>the <em class="font-normal not-italic text-secondary">code</em>
+                </h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 md:gap-24">
+                <!-- Technical Side -->
+                <div class="reveal spotlight-card bg-surface rounded-xl p-8 md:p-10">
+                    <h3 class="font-display text-xl md:text-2xl font-bold mb-6">The Technical Side</h3>
+                    <p class="text-secondary text-base md:text-lg leading-relaxed mb-6">
+                        I'm a rising CS major at <span class="text-primary">LJ University</span>, passionate about
+                        full-stack development, quantum computing, and technology in general.
+                    </p>
+                    <p class="text-secondary text-base md:text-lg leading-relaxed mb-6">
+                        My primary technical skills include <em class="text-primary not-italic">Java</em>,
+                        <em class="text-primary not-italic">Python</em>, <em class="text-primary not-italic">MERN</em>,
+                        and <em class="text-primary not-italic">SQL</em>, making me adept at full-stack development.
+                    </p>
+                    <p class="text-secondary text-base md:text-lg leading-relaxed">
+                        This software expertise is complemented by hands-on experience with computer hardware and IoT.
+                        As a hobby, I love working with electronics and building new things from salvaged components,
+                        such as making <em class="text-primary not-italic">custom drones</em> from scrap parts.
+                    </p>
+                </div>
+
+                <!-- Fun Side -->
+                <div class="reveal delay-1 spotlight-card bg-surface rounded-xl p-8 md:p-10">
+                    <h3 class="font-display text-xl md:text-2xl font-bold mb-6">The "Fun" Side</h3>
+                    <p class="text-secondary text-base md:text-lg leading-relaxed mb-6">
+                        Away from the coding lifestyle, I enjoy playing and watching sports, particularly
+                        <em class="text-primary not-italic">cricket</em>. I'm also an avid reader, currently interested
+                        in physics and computer science texts, however, <em class="text-primary not-italic">Harry Potter</em>
+                        and <em class="text-primary not-italic">Narnia</em> are childhood favorites.
+                    </p>
+                    <p class="text-secondary text-base md:text-lg leading-relaxed mb-6">
+                        I enjoy late-night movie marathons and binging TV-shows, with
+                        <em class="text-primary not-italic">The Big Bang Theory</em> my all-time favorite.
+                    </p>
+                    <p class="text-secondary text-base md:text-lg leading-relaxed">
+                        I'm also a <span class="text-primary">HUGE</span> cookie enthusiast.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Line Divider -->
+    <div class="max-w-[1800px] mx-auto px-6 md:px-12 lg:px-20">
+        <div class="line-expand h-px bg-border"></div>
+    </div>
+
+    <!-- Work Section -->
+    <section id="work" class="py-28 md:py-40 px-6 md:px-12 lg:px-20">
+        <div class="max-w-[1800px] mx-auto">
+            <!-- Section Header -->
+            <div class="reveal flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 md:mb-24">
+                <div>
+                    <p class="text-secondary text-sm tracking-widest uppercase mb-4">Selected Work</p>
+                    <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+                        Things I've <em class="font-normal not-italic text-secondary">built</em>
+                    </h2>
+                </div>
+                <p class="text-secondary text-sm max-w-sm md:text-right">
+                    A selection of projects showcasing my skills and passion for creating meaningful experiences.
+                </p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+                <!-- Project 1: Workout Creator -->
+                <a href="https://workout-creator.netlify.app/" target="_blank" rel="noopener"
+                   class="reveal project-card group block aspect-[4/3] bg-surface rounded-xl overflow-hidden relative">
+                    <div class="project-image absolute inset-0 bg-elevated flex items-center justify-center">
+                        <svg class="w-20 h-20 text-tertiary" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <span class="project-number absolute top-6 left-6 font-display text-sm text-secondary z-10">01</span>
+                    <div class="project-info absolute bottom-0 left-0 right-0 p-6 z-10">
+                        <div class="flex gap-2 mb-3">
+                            <span class="tag">React</span>
+                            <span class="tag">Web App</span>
+                        </div>
+                        <h3 class="font-display text-2xl md:text-3xl font-bold mb-2">Workout Creator</h3>
+                        <p class="text-secondary text-sm">
+                            Based on your choices, the algorithm spins out a customized workout routine just for you.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Project 2: NASA APOD -->
+                <a href="https://apod-nasa-web-app.netlify.app/" target="_blank" rel="noopener"
+                   class="reveal delay-1 project-card group block aspect-[4/3] bg-surface rounded-xl overflow-hidden relative">
+                    <div class="project-image absolute inset-0 bg-elevated flex items-center justify-center">
+                        <svg class="w-20 h-20 text-tertiary" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                        </svg>
+                    </div>
+                    <span class="project-number absolute top-6 left-6 font-display text-sm text-secondary z-10">02</span>
+                    <div class="project-info absolute bottom-0 left-0 right-0 p-6 z-10">
+                        <div class="flex gap-2 mb-3">
+                            <span class="tag">React</span>
+                            <span class="tag">NASA API</span>
+                        </div>
+                        <h3 class="font-display text-2xl md:text-3xl font-bold mb-2">NASA APOD Viewer</h3>
+                        <p class="text-secondary text-sm">
+                            Displays NASA's astronomical picture of the day. Enjoy the view and learn about it too.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Project 3: Todo List -->
+                <a href="https://sams-list.netlify.app/" target="_blank" rel="noopener"
+                   class="reveal delay-2 project-card group block aspect-[4/3] bg-surface rounded-xl overflow-hidden relative">
+                    <div class="project-image absolute inset-0 bg-elevated flex items-center justify-center">
+                        <svg class="w-20 h-20 text-tertiary" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <span class="project-number absolute top-6 left-6 font-display text-sm text-secondary z-10">03</span>
+                    <div class="project-info absolute bottom-0 left-0 right-0 p-6 z-10">
+                        <div class="flex gap-2 mb-3">
+                            <span class="tag">React</span>
+                            <span class="tag">CRUD</span>
+                        </div>
+                        <h3 class="font-display text-2xl md:text-3xl font-bold mb-2">Task Manager</h3>
+                        <p class="text-secondary text-sm">
+                            A CRUD-styled todo list web-app. For those who like to stay organized and plan ahead.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- More on GitHub -->
+                <a href="https://github.com/kuntardivyang" target="_blank" rel="noopener"
+                   class="reveal delay-3 group block aspect-[4/3] bg-surface rounded-xl overflow-hidden relative flex items-center justify-center border border-border hover:border-tertiary transition-colors">
+                    <div class="text-center p-8">
+                        <svg class="w-12 h-12 mx-auto mb-6 text-tertiary group-hover:text-secondary transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <p class="font-display text-sm text-secondary tracking-widest uppercase mb-2">View More</p>
+                        <h3 class="font-display text-3xl md:text-4xl font-bold mb-4 group-hover:text-secondary transition-colors">GitHub</h3>
+                        <p class="text-secondary text-sm mb-4">More projects and experiments</p>
+                        <svg class="w-5 h-5 mx-auto text-secondary group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Line Divider -->
+    <div class="max-w-[1800px] mx-auto px-6 md:px-12 lg:px-20">
+        <div class="line-expand h-px bg-border"></div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-28 md:py-40 px-6 md:px-12 lg:px-20">
+        <div class="max-w-[1800px] mx-auto">
+            <!-- Section Header -->
+            <div class="reveal mb-16 md:mb-24">
+                <p class="text-secondary text-sm tracking-widest uppercase mb-4">Skills & Interests</p>
+                <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+                    Tools of the <em class="font-normal not-italic text-secondary">trade</em>
+                </h2>
+                <p class="text-secondary text-base md:text-lg mt-6 max-w-xl">
+                    These are just my highlighted skills and interests. Have thoughts and wanna share? Reach out whenever.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
+                <!-- Technical Toolset -->
+                <div class="reveal">
+                    <h3 class="font-display text-lg font-bold mb-6 pb-4 border-b border-border">Technical Toolset</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">C</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                    <p class="text-secondary text-sm mt-4">Currently learning: <span class="text-primary">OCaml</span> & <span class="text-primary">Rust</span></p>
+                </div>
+
+                <!-- Frameworks & Stack -->
+                <div class="reveal delay-1">
+                    <h3 class="font-display text-lg font-bold mb-6 pb-4 border-b border-border">Frameworks & Stack</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">MERN</span>
+                        <span class="tag">MEAN</span>
+                        <span class="tag">Tailwind</span>
+                        <span class="tag">Git</span>
+                    </div>
+                </div>
+
+                <!-- Quantum Curiosities -->
+                <div class="reveal delay-2">
+                    <h3 class="font-display text-lg font-bold mb-6 pb-4 border-b border-border">Quantum Curiosities</h3>
+                    <p class="text-secondary text-sm leading-relaxed">
+                        Since my sophomore year of high school, I've become fascinated with quantum mechanics.
+                        Pairing it with my CS passion, I'm intrigued by <em class="text-primary not-italic">quantum information</em>
+                        and aim to be part of the quantum workforce.
+                    </p>
+                </div>
+
+                <!-- Hardware & IoT -->
+                <div class="reveal delay-3">
+                    <h3 class="font-display text-lg font-bold mb-6 pb-4 border-b border-border">Hardware & IoT</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="tag">Electronics</span>
+                        <span class="tag">IoT</span>
+                        <span class="tag">Drones</span>
+                        <span class="tag">Hardware</span>
+                    </div>
+                    <p class="text-secondary text-sm mt-4">Building things from salvaged components</p>
+                </div>
+
+                <!-- Beyond Code -->
+                <div class="reveal delay-4 lg:col-span-2">
+                    <h3 class="font-display text-lg font-bold mb-6 pb-4 border-b border-border">Beyond the Code</h3>
+                    <div class="flex flex-wrap gap-x-8 gap-y-2 text-secondary text-sm">
+                        <span class="interest-item">Cricket</span>
+                        <span class="text-tertiary">✦</span>
+                        <span class="interest-item">Reading</span>
+                        <span class="text-tertiary">✦</span>
+                        <span class="interest-item">Movies</span>
+                        <span class="text-tertiary">✦</span>
+                        <span class="interest-item">The Big Bang Theory</span>
+                        <span class="text-tertiary">✦</span>
+                        <span class="interest-item">Harry Potter</span>
+                        <span class="text-tertiary">✦</span>
+                        <span class="interest-item">Narnia</span>
+                        <span class="text-tertiary">✦</span>
+                        <span class="interest-item">Cookies</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Line Divider -->
+    <div class="max-w-[1800px] mx-auto px-6 md:px-12 lg:px-20">
+        <div class="line-expand h-px bg-border"></div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-28 md:py-40 px-6 md:px-12 lg:px-20">
+        <div class="max-w-[1800px] mx-auto">
+            <div class="reveal">
+                <p class="text-secondary text-sm tracking-widest uppercase mb-4">Get in Touch</p>
+            </div>
+
+            <h2 class="font-display text-[9vw] md:text-[7vw] lg:text-[5vw] font-bold leading-[0.95] tracking-tight mb-12">
+                <div class="line-reveal">
+                    <span>Wanna learn</span>
+                </div>
+                <div class="line-reveal delay-1">
+                    <span><em class="font-normal not-italic text-secondary">more</em>?</span>
+                </div>
+            </h2>
+
+            <div class="reveal delay-2 max-w-2xl">
+                <p class="text-secondary text-base md:text-lg leading-relaxed mb-10">
+                    This website is truly only a snapshot of who I am. If you would like to learn more about me,
+                    feel free to reach out. I'm always looking to make new friends and connect.
+                </p>
+
+                <a href="mailto:divyangkuntar@gmail.com"
+                   class="inline-flex items-center gap-4 font-display text-xl md:text-2xl font-bold group magnetic">
+                    <span class="link-hover">divyangkuntar@gmail.com</span>
+                    <svg class="w-6 h-6 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="reveal delay-3 flex gap-8 mt-16">
+                <a href="mailto:divyangkuntar@gmail.com" class="footer-link text-secondary hover:text-primary text-sm transition-colors magnetic">
+                    Email
+                </a>
+                <a href="https://github.com/kuntardivyang" target="_blank" rel="noopener" class="footer-link text-secondary hover:text-primary text-sm transition-colors magnetic">
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/kuntardivyang" target="_blank" rel="noopener" class="footer-link text-secondary hover:text-primary text-sm transition-colors magnetic">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 md:px-12 lg:px-20 border-t border-border">
+        <div class="max-w-[1800px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-tertiary text-xs">
+                © 2024 Divyang Kuntar
+            </p>
+            <p class="text-tertiary text-xs">
+                Hasta la vista
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Custom cursor
+        const cursorDot = document.getElementById('cursorDot');
+        const cursorOutline = document.getElementById('cursorOutline');
+
+        if (window.innerWidth >= 768 && cursorDot && cursorOutline) {
+            let mouseX = 0, mouseY = 0;
+            let outlineX = 0, outlineY = 0;
+
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+
+                cursorDot.style.left = mouseX + 'px';
+                cursorDot.style.top = mouseY + 'px';
+            });
+
+            // Smooth outline follow
+            function animateOutline() {
+                outlineX += (mouseX - outlineX) * 0.12;
+                outlineY += (mouseY - outlineY) * 0.12;
+
+                cursorOutline.style.left = outlineX + 'px';
+                cursorOutline.style.top = outlineY + 'px';
+
+                requestAnimationFrame(animateOutline);
+            }
+            animateOutline();
+
+            // Cursor hover effect
+            const hoverElements = document.querySelectorAll('a, button, .magnetic');
+            hoverElements.forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursorOutline.classList.add('hover');
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursorOutline.classList.remove('hover');
+                });
+            });
+
+            // Hide default cursor
+            document.body.style.cursor = 'none';
+            hoverElements.forEach(el => el.style.cursor = 'none');
+        }
+
+        // Mobile menu
+        const menuBtn = document.getElementById('menuBtn');
+        const closeMenu = document.getElementById('closeMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (menuBtn && closeMenu && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.style.opacity = '1';
+                mobileMenu.style.pointerEvents = 'auto';
+            });
+
+            closeMenu.addEventListener('click', () => {
+                mobileMenu.style.opacity = '0';
+                mobileMenu.style.pointerEvents = 'none';
+            });
+
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.style.opacity = '0';
+                    mobileMenu.style.pointerEvents = 'none';
+                });
+            });
+        }
+
+        // Scroll reveal
+        const revealElements = document.querySelectorAll('.reveal, .line-reveal, .line-expand');
+
+        const revealOnScroll = () => {
+            revealElements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (elementTop < windowHeight - 80) {
+                    el.classList.add('active');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Magnetic effect (desktop only)
+        if (window.innerWidth >= 768) {
+            const magneticElements = document.querySelectorAll('.magnetic');
+
+            magneticElements.forEach(el => {
+                el.addEventListener('mousemove', (e) => {
+                    const rect = el.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    el.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+                });
+
+                el.addEventListener('mouseleave', () => {
+                    el.style.transform = 'translate(0, 0)';
+                });
+            });
+        }
+    </script>
+</body>
 </html>
-
